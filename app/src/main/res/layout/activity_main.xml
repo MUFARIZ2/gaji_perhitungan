@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aplikasi Perhitungan Gaji"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/outline"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            >
+            <EditText
+                android:id="@+id/inNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukan Nama"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status Perkawinan :"
+            android:textSize="20dp"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            >
+            <CheckBox
+                android:id="@+id/cbMenikah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menikah"/>
+            <CheckBox
+                android:id="@+id/cbLajang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lajang"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Golongan Kerja :"
+            android:textSize="20dp"/>
+        <RadioGroup
+            android:id="@+id/grupGol"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RadioButton
+                android:id="@+id/radioA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan A"/>
+            <RadioButton
+                android:id="@+id/radioB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan B"/>
+        </RadioGroup>
+        <Button
+            android:layout_marginLeft="20dp"
+            android:id="@+id/btnHitung"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="HITUNG"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasilNama"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasilStatus"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasilGaji"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hasilGolongan"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
